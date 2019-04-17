@@ -53,6 +53,10 @@ namespace wfsql
             this.areaTo = new System.Windows.Forms.NumericUpDown();
             this.lastName = new System.Windows.Forms.TextBox();
             this.strictSearchByName = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.areaFrom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.areaTo)).BeginInit();
@@ -63,11 +67,11 @@ namespace wfsql
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(22, 62);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(29, 76);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(520, 283);
+            this.dataGridView1.Size = new System.Drawing.Size(693, 348);
             this.dataGridView1.TabIndex = 0;
             // 
             // submitButton
@@ -75,12 +79,12 @@ namespace wfsql
             this.submitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.submitButton.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.submitButton.ForeColor = System.Drawing.Color.White;
-            this.submitButton.Location = new System.Drawing.Point(331, 418);
-            this.submitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.submitButton.Location = new System.Drawing.Point(441, 514);
+            this.submitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.submitButton.Name = "submitButton";
-            this.submitButton.Size = new System.Drawing.Size(211, 75);
+            this.submitButton.Size = new System.Drawing.Size(281, 92);
             this.submitButton.TabIndex = 2;
-            this.submitButton.Text = "Обновить";
+            this.submitButton.Text = "Оновити";
             this.submitButton.UseVisualStyleBackColor = false;
             // 
             // saveData
@@ -88,12 +92,12 @@ namespace wfsql
             this.saveData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.saveData.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.saveData.ForeColor = System.Drawing.Color.White;
-            this.saveData.Location = new System.Drawing.Point(22, 418);
-            this.saveData.Margin = new System.Windows.Forms.Padding(2);
+            this.saveData.Location = new System.Drawing.Point(29, 514);
+            this.saveData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.saveData.Name = "saveData";
-            this.saveData.Size = new System.Drawing.Size(211, 75);
+            this.saveData.Size = new System.Drawing.Size(281, 92);
             this.saveData.TabIndex = 3;
-            this.saveData.Text = "Сохранить";
+            this.saveData.Text = "Зберегти";
             this.saveData.UseVisualStyleBackColor = false;
             this.saveData.Click += new System.EventHandler(this.saveData_Click);
             // 
@@ -109,40 +113,39 @@ namespace wfsql
             this.areaFrom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.areaFrom.DecimalPlaces = 2;
             this.areaFrom.ForeColor = System.Drawing.Color.White;
-            this.areaFrom.Location = new System.Drawing.Point(268, 352);
-            this.areaFrom.Margin = new System.Windows.Forms.Padding(2);
+            this.areaFrom.Location = new System.Drawing.Point(357, 433);
+            this.areaFrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.areaFrom.Maximum = new decimal(new int[] {
             1241513983,
             370409800,
             542101,
             0});
             this.areaFrom.Name = "areaFrom";
-            this.areaFrom.Size = new System.Drawing.Size(88, 20);
+            this.areaFrom.Size = new System.Drawing.Size(117, 22);
             this.areaFrom.TabIndex = 4;
             // 
             // enabledFilterByArea
             // 
             this.enabledFilterByArea.AutoSize = true;
             this.enabledFilterByArea.ForeColor = System.Drawing.Color.White;
-            this.enabledFilterByArea.Location = new System.Drawing.Point(51, 352);
-            this.enabledFilterByArea.Margin = new System.Windows.Forms.Padding(2);
+            this.enabledFilterByArea.Location = new System.Drawing.Point(68, 433);
+            this.enabledFilterByArea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enabledFilterByArea.Name = "enabledFilterByArea";
-            this.enabledFilterByArea.Size = new System.Drawing.Size(125, 17);
+            this.enabledFilterByArea.Size = new System.Drawing.Size(152, 21);
             this.enabledFilterByArea.TabIndex = 5;
-            this.enabledFilterByArea.Text = "Фильтр по области";
+            this.enabledFilterByArea.Text = "Фільтр за площею";
             this.enabledFilterByArea.UseVisualStyleBackColor = true;
-            this.enabledFilterByArea.CheckedChanged += new System.EventHandler(this.enabledFilterByArea_CheckedChanged);
             // 
             // enabledFilterByName
             // 
             this.enabledFilterByName.AutoSize = true;
             this.enabledFilterByName.ForeColor = System.Drawing.Color.White;
-            this.enabledFilterByName.Location = new System.Drawing.Point(51, 378);
-            this.enabledFilterByName.Margin = new System.Windows.Forms.Padding(2);
+            this.enabledFilterByName.Location = new System.Drawing.Point(68, 465);
+            this.enabledFilterByName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.enabledFilterByName.Name = "enabledFilterByName";
-            this.enabledFilterByName.Size = new System.Drawing.Size(116, 17);
+            this.enabledFilterByName.Size = new System.Drawing.Size(173, 21);
             this.enabledFilterByName.TabIndex = 6;
-            this.enabledFilterByName.Text = "Фильтр по имени";
+            this.enabledFilterByName.Text = "Фильтр за прізвищем";
             this.enabledFilterByName.UseVisualStyleBackColor = true;
             // 
             // areaTo
@@ -150,39 +153,88 @@ namespace wfsql
             this.areaTo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.areaTo.DecimalPlaces = 2;
             this.areaTo.ForeColor = System.Drawing.Color.White;
-            this.areaTo.Location = new System.Drawing.Point(424, 351);
-            this.areaTo.Margin = new System.Windows.Forms.Padding(2);
+            this.areaTo.Location = new System.Drawing.Point(565, 432);
+            this.areaTo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.areaTo.Maximum = new decimal(new int[] {
+            1241513983,
+            370409800,
+            542101,
+            0});
             this.areaTo.Name = "areaTo";
-            this.areaTo.Size = new System.Drawing.Size(88, 20);
+            this.areaTo.Size = new System.Drawing.Size(117, 22);
             this.areaTo.TabIndex = 7;
             // 
             // lastName
             // 
             this.lastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lastName.ForeColor = System.Drawing.Color.White;
-            this.lastName.Location = new System.Drawing.Point(424, 375);
-            this.lastName.Margin = new System.Windows.Forms.Padding(2);
+            this.lastName.Location = new System.Drawing.Point(565, 462);
+            this.lastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lastName.Name = "lastName";
-            this.lastName.Size = new System.Drawing.Size(89, 20);
+            this.lastName.Size = new System.Drawing.Size(117, 22);
             this.lastName.TabIndex = 8;
             // 
             // strictSearchByName
             // 
             this.strictSearchByName.AutoSize = true;
             this.strictSearchByName.ForeColor = System.Drawing.Color.White;
-            this.strictSearchByName.Location = new System.Drawing.Point(268, 378);
-            this.strictSearchByName.Margin = new System.Windows.Forms.Padding(2);
+            this.strictSearchByName.Location = new System.Drawing.Point(357, 465);
+            this.strictSearchByName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.strictSearchByName.Name = "strictSearchByName";
-            this.strictSearchByName.Size = new System.Drawing.Size(67, 17);
+            this.strictSearchByName.Size = new System.Drawing.Size(83, 21);
             this.strictSearchByName.TabIndex = 9;
             this.strictSearchByName.Text = "Строгий";
             this.strictSearchByName.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(535, 438);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 17);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "до";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(325, 437);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 17);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "від";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(688, 438);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 17);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "м^2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(480, 438);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 17);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "м^2";
+            // 
             // DataChanger
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 515);
+            this.ClientSize = new System.Drawing.Size(752, 634);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.strictSearchByName);
             this.Controls.Add(this.lastName);
             this.Controls.Add(this.areaTo);
@@ -193,11 +245,11 @@ namespace wfsql
             this.Controls.Add(this.submitButton);
             this.Controls.Add(this.dataGridView1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DataChanger";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Data Changer";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.areaFrom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.areaTo)).EndInit();
@@ -218,6 +270,10 @@ namespace wfsql
         private System.Windows.Forms.NumericUpDown areaTo;
         private System.Windows.Forms.TextBox lastName;
         private System.Windows.Forms.CheckBox strictSearchByName;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
 
